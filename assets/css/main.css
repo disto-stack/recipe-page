@@ -6,6 +6,12 @@
 	font-size: 14px;
 }
 
+@media screen and (min-width: 1024px) {
+	* {
+		font-size: 16px;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +32,20 @@ h6 {
 
 .font-size-xxs {
 	font-size: 8px !important;
+}
+
+@media screen and (min-width: 1024px) {
+	.font-size-s {
+		font-size: 14px !important;
+	}
+
+	.font-size-xs {
+		font-size: 12px !important;
+	}
+
+	.font-size-xxs {
+		font-size: 10px !important;
+	}
 }
 
 .font-black {
@@ -55,4 +75,16 @@ h6 {
 .container {
 	margin: 0 auto;
 	width: 95%;
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 67%;
+	}
+}
+
+/* Header */
+.header-text {
+	margin-top: 0;
+	margin-left: 6px;
 }
