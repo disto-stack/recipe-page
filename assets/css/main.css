@@ -22,6 +22,22 @@ h6 {
 }
 
 /* Utilities */
+.color-black {
+	color: #000000 !important;
+}
+
+.color-gray {
+	color: #4f4f4f !important;
+}
+
+.color-gray-light {
+	color: #bdbdbd !important;
+}
+
+.color-gold {
+	color: #f2994a !important;
+}
+
 .font-size-s {
 	font-size: 12px !important;
 }
@@ -48,12 +64,8 @@ h6 {
 	}
 }
 
-.font-black {
-	color: #000000 !important;
-}
-
-.font-gray {
-	color: #4f4f4f !important;
+.font-upper {
+	text-transform: uppercase !important;
 }
 
 .font-weight-regular {
@@ -87,4 +99,60 @@ h6 {
 .header-text {
 	margin-top: 0;
 	margin-left: 6px;
+}
+
+/* Main */
+main {
+	padding: 20px 0;
+	position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		flex-direction: row-reverse !important;
+	}
+}
+
+/** Aside **/
+aside {
+	width: 100%;
+}
+
+.summary-point {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 2px;
+	padding: 10px 0;
+}
+
+.summary-point span {
+	display: block;
+}
+
+.material-icons {
+	font-size: 16px;
+	margin-right: 1px;
+}
+
+@media screen and (min-width: 1024px) {
+	aside {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		justify-content: center;
+		gap: 10px;
+		width: 200px;
+		padding: 40px 0;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 12px;
+	}
+
+	.summary-point {
+		justify-content: center;
+	}
+
+	.material-icons {
+		font-size: 20px;
+	}
 }
