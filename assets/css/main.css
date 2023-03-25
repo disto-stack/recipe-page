@@ -2,6 +2,8 @@
 
 * {
 	font-family: 'Montserrat', sans-serif;
+	color: #333333;
+	font-size: 14px;
 }
 
 h1,
@@ -11,6 +13,27 @@ h4,
 h5,
 h6 {
 	font-family: 'Playfair Display', serif;
+}
+
+/* Utilities */
+.font-size-s {
+	font-size: 12px !important;
+}
+
+.font-size-xs {
+	font-size: 10px !important;
+}
+
+.font-size-xxs {
+	font-size: 8px !important;
+}
+
+.font-black {
+	color: #000000 !important;
+}
+
+.font-gray {
+	color: #4f4f4f !important;
 }
 
 .font-weight-regular {
@@ -27,4 +50,9 @@ h6 {
 
 .font-style-italic {
 	font-style: italic !important;
+}
+
+.container {
+	margin: 0 auto;
+	width: 95%;
 }
