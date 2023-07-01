@@ -38,6 +38,18 @@ h6 {
 	color: #f2994a !important;
 }
 
+.font-size-xl {
+	font-size: 18px !important;
+}
+
+.font-size-lg {
+	font-size: 16px !important;
+}
+
+.font-size-m {
+	font-size: 14px !important;
+}
+
 .font-size-s {
 	font-size: 12px !important;
 }
@@ -51,6 +63,18 @@ h6 {
 }
 
 @media screen and (min-width: 1024px) {
+	.font-size-xl {
+		font-size: 20px !important;
+	}
+
+	.font-size-lg {
+		font-size: 18px !important;
+	}
+
+	.font-size-m {
+		font-size: 16px !important;
+	}
+
 	.font-size-s {
 		font-size: 14px !important;
 	}
@@ -101,15 +125,24 @@ h6 {
 	margin-left: 6px;
 }
 
+/* Content */
+@media screen and (min-width: 1024px) {
+	.content {
+		flex-direction: row-reverse !important;
+		gap: 40px;
+		flex-wrap: nowrap;
+		padding: 50px 0;
+	}
+}
+
 /* Main */
 main {
 	padding: 20px 0;
-	position: relative;
 }
 
 @media screen and (min-width: 1024px) {
 	main {
-		flex-direction: row-reverse !important;
+		padding-top: 0;
 	}
 }
 
@@ -137,12 +170,10 @@ aside {
 
 @media screen and (min-width: 1024px) {
 	aside {
-		position: absolute;
-		top: 20px;
-		right: 0;
 		justify-content: center;
 		gap: 10px;
-		width: 200px;
+		width: fit-content;
+		height: fit-content;
 		padding: 40px 0;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 		border-radius: 12px;
@@ -153,6 +184,26 @@ aside {
 	}
 
 	.material-icons {
-		font-size: 20px;
+		font-size: 34px;
+	}
+}
+
+/* Ingredients section */
+.ingredient-checkbox {
+	display: block;
+	padding: 5px 0;
+}
+
+.ingredients-section-title {
+	margin-top: 0;
+}
+
+.ingredient-checkbox-input {
+	margin-right: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+	.ingredient-checkbox-input {
+		margin-right: 10px;
 	}
 }
